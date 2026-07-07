@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Abubakar Umar</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+background:#081b29;
+color:#fff;
+}
+
+header{
+background:#051129;
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.logo{
+font-size:28px;
+font-weight:bold;
+color:#00abf0;
+text-decoration:none;
+}
+
+nav a{
+color:#fff;
+text-decoration:none;
+margin-left:18px;
+font-weight:bold;
+transition:.3s;
+}
+
+nav a:hover,
+.active{
+color:#00abf0;
+}
+
+.contact{
+padding:70px 8%;
+}
+
+.contact h1{
+text-align:center;
+font-size:45px;
+margin-bottom:10px;
+}
+
+.contact h1 span{
+color:#00abf0;
+}
+
+.contact p{
+text-align:center;
+color:#ccc;
+margin-bottom:40px;
+}
+
+.container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+gap:40px;
+}
+
+.info{
+background:#112e42;
+padding:30px;
+border-radius:15px;
+}
+
+.info h2{
+color:#00abf0;
+margin-bottom:20px;
+}
+
+.info p{
+text-align:left;
+margin:18px 0;
+font-size:17px;
+}
+
+.info i{
+color:#00abf0;
+margin-right:10px;
+}
+
+.social{
+margin-top:25px;
+}
+
+.social a{
+display:inline-block;
+width:45px;
+height:45px;
+line-height:45px;
+text-align:center;
+border-radius:50%;
+background:#00abf0;
+color:white;
+margin-right:10px;
+transition:.3s;
+font-size:20px;
+}
+
+.social a:hover{
+background:white;
+color:#00abf0;
+}
+
+form{
+background:#112e42;
+padding:30px;
+border-radius:15px;
+}
+
+form input,
+form textarea{
+width:100%;
+padding:15px;
+margin-bottom:20px;
+border:none;
+border-radius:8px;
+font-size:16px;
+}
+
+form textarea{
+height:160px;
+resize:none;
+}
+
+button{
+padding:14px 35px;
+background:#00abf0;
+color:white;
+border:none;
+border-radius:30px;
+cursor:pointer;
+font-size:17px;
+transition:.3s;
+}
+
+button:hover{
+background:white;
+color:#00abf0;
+}
+
+footer{
+margin-top:60px;
+background:#051129;
+text-align:center;
+padding:20px;
+}
+
+@media(max-width:768px){
+
+header{
+flex-direction:column;
+}
+
+nav{
+margin-top:15px;
+text-align:center;
+}
+
+nav a{
+display:inline-block;
+margin:8px;
+}
+
+.contact h1{
+font-size:35px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<a href="index.html" class="logo">Abubakar.</a>
+
+<nav>
+
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="skills.html">Skills</a>
+<a href="projects.html">Projects</a>
+<a href="services.html">Services</a>
+<a href="experience.html">Experience</a>
+<a href="education.html">Education</a>
+<a href="learning.html">Learning</a>
+<a href="blog.html">Blog</a>
+<a href="gallery.html">Gallery</a>
+<a href="hobbies.html">Hobbies</a>
+<a href="testimonial.html">Testimonial</a>
+<a href="certification.html">Certification</a>
+<a href="contact.html" class="active">Contact</a>
+
+</nav>
+
+</header>
+
+<section class="contact">
+
+<h1>Contact <span>Me</span></h1>
+
+<p>If you would like to work with me or have any questions, feel free to contact me.</p>
+
+<div class="container">
+
+<div class="info">
+
+<h2>Contact Information</h2>
+
+<p><i class="fas fa-user"></i> <strong>Name:</strong> Abubakar Umar</p>
+
+<p><i class="fas fa-envelope"></i> <strong>Email:</strong> abubakar@example.com</p>
+
+<p><i class="fas fa-phone"></i> <strong>Phone:</strong> +234 XXX XXX XXXX</p>
+
+<p><i class="fas fa-map-marker-alt"></i> <strong>Location:</strong> Kano, Nigeria</p>
+
+<div class="social">
+
+<a href="#"><i class="fab fa-facebook-f"></i></a>
+<a href="#"><i class="fab fa-github"></i></a>
+<a href="#"><i class="fab fa-linkedin-in"></i></a>
+<a href="#"><i class="fab fa-instagram"></i></a>
+
+</div>
+
+</div>
+
+<form onsubmit="sendMessage(event)">
+
+<input type="text" placeholder="Your Name" required>
+
+<input type="email" placeholder="Your Email" required>
+
+<input type="text" placeholder="Subject" required>
+
+<textarea placeholder="Your Message" required></textarea>
+
+<button type="submit">Send Message</button>
+
+</form>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 Abubakar Umar | Computer Science Portfolio</p>
+
+</footer>
+
+<script>
+
+function sendMessage(e){
+
+e.preventDefault();
+
+alert("Thank you! Your message has been sent successfully.");
+
+}
+
+</script>
+
+</body>
+</html>

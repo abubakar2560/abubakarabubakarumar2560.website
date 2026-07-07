@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hobbies | Abubakar Umar</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    body {
+      background: #081b29;
+      color: white;
+    }
+    
+    /* HEADER */
+    
+    header {
+      background: #051129;
+      padding: 20px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+      color: #00abf0;
+      text-decoration: none;
+    }
+    
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 18px;
+      font-weight: bold;
+      transition: .3s;
+    }
+    
+    nav a:hover,
+    .active {
+      color: #00abf0;
+    }
+    
+    /* HOBBIES */
+    
+    .hobbies {
+      padding: 70px 8%;
+      text-align: center;
+    }
+    
+    .hobbies h1 {
+      font-size: 45px;
+      margin-bottom: 15px;
+    }
+    
+    .hobbies h1 span {
+      color: #00abf0;
+    }
+    
+    .hobbies p {
+      color: #ccc;
+      margin-bottom: 45px;
+      font-size: 18px;
+    }
+    
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+    
+    .card {
+      background: #112e42;
+      padding: 30px;
+      border-radius: 15px;
+      transition: .4s;
+    }
+    
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 0 20px #00abf0;
+    }
+    
+    .card i {
+      font-size: 50px;
+      color: #00abf0;
+      margin-bottom: 20px;
+    }
+    
+    .card h2 {
+      margin-bottom: 15px;
+    }
+    
+    .card p {
+      line-height: 1.8;
+      font-size: 16px;
+      color: #ddd;
+    }
+    
+    footer {
+      margin-top: 60px;
+      background: #051129;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    @media(max-width:768px) {
+      
+      header {
+        flex-direction: column;
+      }
+      
+      nav {
+        margin-top: 15px;
+        text-align: center;
+      }
+      
+      nav a {
+        display: inline-block;
+        margin: 8px;
+      }
+      
+      .hobbies h1 {
+        font-size: 35px;
+      }
+      
+    }
+  </style>
+  
+</head>
+
+<body>
+  
+  <header>
+    
+    <a href="index.html" class="logo">Abubakar.</a>
+    
+    <nav>
+      
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="skills.html">Skills</a>
+      <a href="projects.html">Projects</a>
+      <a href="services.html">Services</a>
+      <a href="experience.html">Experience</a>
+      <a href="education.html">Education</a>
+      <a href="learning.html">Learning</a>
+      <a href="blog.html">Blog</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="hobbies.html" class="active">Hobbies</a>
+      <a href="testimonial.html">Testimonial</a>
+      <a href="contact.html">Contact</a>
+      
+    </nav>
+    
+  </header>
+  
+  <section class="hobbies">
+    
+    <h1>My <span>Hobbies</span></h1>
+    
+    <p>Activities I enjoy during my free time to improve my creativity, knowledge and personal development.</p>
+    
+    <div class="container">
+      
+      <div class="card">
+        <i class="fas fa-laptop-code"></i>
+        <h2>Coding</h2>
+        <p>I enjoy writing code, solving programming problems and creating responsive websites and software applications.</p>
+      </div>
+      
+      <div class="card">
+        <i class="fas fa-book-open"></i>
+        <h2>Reading</h2>
+        <p>I love reading technology articles, programming books and educational resources to improve my knowledge.</p>
+      </div>
+      
+      <div class="card">
+        <i class="fas fa-globe"></i>
+        <h2>Learning New Technologies</h2>
+        <p>I enjoy exploring new programming languages, frameworks and modern software development tools.</p>
+      </div>
+      
+      <div class="card">
+        <i class="fas fa-users"></i>
+        <h2>Team Collaboration</h2>
+        <p>I enjoy working with classmates on projects, sharing ideas and solving problems together.</p>
+      </div>
+      
+      <div class="card">
+        <i class="fas fa-gamepad"></i>
+        <h2>Gaming</h2>
+        <p>I play educational and strategy games for relaxation and to improve problem-solving skills.</p>
+      </div>
+      
+      <div class="card">
+        <i class="fas fa-mosque"></i>
+        <h2>Community Activities</h2>
+        <p>I enjoy participating in positive community activities, learning and personal development programs.</p>
+      </div>
+      
+    </div>
+    
+  </section>
+  
+  <footer>
+    
+    <p>© 2026 Abubakar Umar | Computer Science Portfolio</p>
+    
+  </footer>
+  
+</body>
+
+</html>

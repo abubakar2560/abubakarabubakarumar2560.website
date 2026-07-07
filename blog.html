@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog | Abubakar Umar</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    body {
+      background: #081b29;
+      color: #fff;
+    }
+    
+    header {
+      background: #051129;
+      padding: 20px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+      color: #00abf0;
+      text-decoration: none;
+    }
+    
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 18px;
+      font-weight: bold;
+      transition: .3s;
+    }
+    
+    nav a:hover,
+    .active {
+      color: #00abf0;
+    }
+    
+    .blog {
+      padding: 70px 8%;
+    }
+    
+    .blog h1 {
+      text-align: center;
+      font-size: 45px;
+      margin-bottom: 10px;
+    }
+    
+    .blog h1 span {
+      color: #00abf0;
+    }
+    
+    .blog .intro {
+      text-align: center;
+      font-size: 18px;
+      color: #ccc;
+      margin-bottom: 50px;
+    }
+    
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+    }
+    
+    .card {
+      background: #112e42;
+      border-radius: 15px;
+      overflow: hidden;
+      transition: .4s;
+    }
+    
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 0 20px #00abf0;
+    }
+    
+    .card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+    
+    .content {
+      padding: 20px;
+    }
+    
+    .content h2 {
+      color: #00abf0;
+      margin-bottom: 10px;
+    }
+    
+    .content small {
+      color: #aaa;
+      display: block;
+      margin-bottom: 15px;
+    }
+    
+    .content p {
+      line-height: 1.7;
+      color: #ddd;
+      margin-bottom: 20px;
+    }
+    
+    .btn {
+      display: inline-block;
+      padding: 10px 22px;
+      background: #00abf0;
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      transition: .3s;
+    }
+    
+    .btn:hover {
+      background: white;
+      color: #00abf0;
+    }
+    
+    footer {
+      margin-top: 60px;
+      background: #051129;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    @media(max-width:768px) {
+      
+      header {
+        flex-direction: column;
+      }
+      
+      nav {
+        margin-top: 15px;
+        text-align: center;
+      }
+      
+      nav a {
+        display: inline-block;
+        margin: 8px;
+      }
+      
+      .blog h1 {
+        font-size: 35px;
+      }
+      
+    }
+  </style>
+  
+</head>
+
+<body>
+  
+  <header>
+    
+    <a href="index.html" class="logo">Abubakar.</a>
+    
+    <nav>
+      
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="skills.html">Skills</a>
+      <a href="projects.html">Projects</a>
+      <a href="services.html">Services</a>
+      <a href="experience.html">Experience</a>
+      <a href="education.html">Education</a>
+      <a href="learning.html">Learning</a>
+      <a href="blog.html" class="active">Blog</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+      
+    </nav>
+    
+  </header>
+  
+  <section class="blog">
+    
+    <h1>My <span>Blog</span></h1>
+    
+    <p class="intro">
+      I enjoy sharing my learning journey, programming experience and technology ideas.
+    </p>
+    
+    <div class="container">
+      
+      <div class="card">
+        
+        <img src="images/blog1.jpg" alt="Blog">
+        
+        <div class="content">
+          
+          <h2>Why I Chose Computer Science</h2>
+          
+          <small><i class="fas fa-calendar"></i> July 2026</small>
+          
+          <p>
+            Computer Science allows me to solve problems using technology. Every new programming language and project increases my knowledge and confidence.
+          </p>
+          
+          <a href="#" class="btn">Read More</a>
+          
+        </div>
+        
+      </div>
+      
+      <div class="card">
+        
+        <img src="images/blog2.jpg" alt="Blog">
+        
+        <div class="content">
+          
+          <h2>Learning Web Development</h2>
+          
+          <small><i class="fas fa-calendar"></i> June 2026</small>
+          
+          <p>
+            Learning HTML, CSS and JavaScript has helped me build responsive and interactive websites while improving my creativity.
+          </p>
+          
+          <a href="#" class="btn">Read More</a>
+          
+        </div>
+        
+      </div>
+      
+      <div class="card">
+        
+        <img src="images/blog3.jpg" alt="Blog">
+        
+        <div class="content">
+          
+          <h2>My Future Goals</h2>
+          
+          <small><i class="fas fa-calendar"></i> May 2026</small>
+          
+          <p>
+            My dream is to become a professional Software Engineer, develop useful applications and contribute to technological innovation.
+          </p>
+          
+          <a href="#" class="btn">Read More</a>
+          
+        </div>
+        
+      </div>
+      
+    </div>
+    
+  </section>
+  
+  <footer>
+    
+    <p>© 2026 Abubakar Umar | Computer Science Portfolio</p>
+    
+  </footer>
+  
+</body>
+
+</html>

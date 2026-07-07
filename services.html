@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services | Abubakar Umar</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    body {
+      background: #081b29;
+      color: #fff;
+    }
+    
+    header {
+      background: #051129;
+      padding: 20px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+      color: #00abf0;
+      text-decoration: none;
+    }
+    
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 18px;
+      font-weight: bold;
+      transition: .3s;
+    }
+    
+    nav a:hover,
+    .active {
+      color: #00abf0;
+    }
+    
+    .services {
+      padding: 70px 8%;
+    }
+    
+    .services h1 {
+      text-align: center;
+      font-size: 45px;
+      margin-bottom: 15px;
+    }
+    
+    .services h1 span {
+      color: #00abf0;
+    }
+    
+    .services p {
+      text-align: center;
+      margin-bottom: 45px;
+      color: #ccc;
+      font-size: 18px;
+    }
+    
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+    
+    .card {
+      background: #112e42;
+      padding: 30px 20px;
+      border-radius: 15px;
+      text-align: center;
+      transition: .4s;
+    }
+    
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 0 20px #00abf0;
+    }
+    
+    .card i {
+      font-size: 50px;
+      color: #00abf0;
+      margin-bottom: 20px;
+    }
+    
+    .card h2 {
+      margin-bottom: 15px;
+    }
+    
+    .card p {
+      font-size: 16px;
+      line-height: 1.7;
+      color: #ddd;
+      margin-bottom: 20px;
+    }
+    
+    .btn {
+      display: inline-block;
+      padding: 10px 25px;
+      background: #00abf0;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 30px;
+      transition: .3s;
+    }
+    
+    .btn:hover {
+      background: #fff;
+      color: #00abf0;
+    }
+    
+    footer {
+      margin-top: 60px;
+      background: #051129;
+      text-align: center;
+      padding: 20px;
+    }
+    
+    @media(max-width:768px) {
+      
+      header {
+        flex-direction: column;
+      }
+      
+      nav {
+        margin-top: 15px;
+        text-align: center;
+      }
+      
+      nav a {
+        display: inline-block;
+        margin: 8px;
+      }
+      
+      .services h1 {
+        font-size: 35px;
+      }
+      
+    }
+  </style>
+  
+</head>
+
+<body>
+  
+  <header>
+    
+    <a href="index.html" class="logo">Abubakar.</a>
+    
+    <nav>
+      
+      <a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="skills.html">Skills</a>
+<a href="projects.html">Projects</a>
+<a href="services.html">Services</a>
+<a href="experience.html">Experience</a>
+<a href="education.html">Education</a>
+<a href="blog.html">Blog</a>
+<a href="learning.html">Learning</a>
+<a href="hobbies.html">Hobbies</a>
+<a href="certification.html">Certification</a>
+<a href="testimonial.html">Testimonial</a>
+<a href="contact.html">Contact</a>
+
+      
+    </nav>
+    
+  </header>
+  
+  <section class="services">
+    
+    <h1>My <span>Services</span></h1>
+    
+    <p>I provide quality digital solutions and continuously improve my technical skills.</p>
+    
+    <div class="container">
+      
+      <div class="card">
+        <i class="fas fa-code"></i>
+        <h2>Web Development</h2>
+        <p>I design and develop responsive websites using HTML, CSS and JavaScript with clean and modern layouts.</p>
+        <a href="contact.html" class="btn">Learn More</a>
+      </div>
+      
+      <div class="card">
+        <i class="fas fa-laptop-code"></i>
+        <h2>Frontend Design</h2>
+        <p>I create attractive user interfaces that are responsive, fast and user-friendly on all devices.</p>
+        <a href="contact.html" class="btn">Learn More</a>
+      </div>
+      
+      <div class="card">
+        <i class="fas fa-database"></i>
+        <h2>Database Design</h2>
+        <p>I design and manage relational databases using SQL for student and business applications.</p>
+        <a href="contact.html" class="btn">Learn More</a>
+      </div>
+      
+      <div class="card">
+        <i class="fas fa-mobile-alt"></i>
+        <h2>Responsive Design</h2>
+        <p>I ensure websites work perfectly on desktops, tablets and mobile phones.</p>
+        <a href="contact.html" class="btn">Learn More</a>
+      </div>
+      
+      <div class="card">
+        <i class="fas fa-bug"></i>
+        <h2>Debugging</h2>
+        <p>I identify coding errors, improve performance and solve common programming problems.</p>
+        <a href="contact.html" class="btn">Learn More</a>
+      </div>
+      
+      <div class="card">
+        <i class="fas fa-user-graduate"></i>
+        <h2>Programming Tutor</h2>
+        <p>I assist beginners in learning HTML, CSS, JavaScript and basic programming concepts.</p>
+        <a href="contact.html" class="btn">Learn More</a>
+      </div>
+      
+    </div>
+    
+  </section>
+  
+  <footer>
+    
+    <p>© 2026 Abubakar Umar | Computer Science Portfolio</p>
+    
+  </footer>
+  
+</body>
+
+</html>

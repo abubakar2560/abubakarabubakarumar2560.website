@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Abubakar Umar</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    body {
+      background: #081b29;
+      color: white;
+    }
+    
+    /* HEADER */
+    
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 20px 8%;
+      background: #051129;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+    }
+    
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+      color: #00abf0;
+      text-decoration: none;
+    }
+    
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 18px;
+      transition: .3s;
+      font-weight: bold;
+    }
+    
+    nav a:hover,
+    nav .active {
+      color: #00abf0;
+    }
+    
+    /* ABOUT */
+    
+    .about {
+      padding: 140px 8% 60px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 50px;
+      flex-wrap: wrap;
+    }
+    
+    .about-img {
+      flex: 1;
+      text-align: center;
+    }
+    
+    .about-img img {
+      width: 320px;
+      height: 320px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 6px solid #00abf0;
+      box-shadow: 0 0 25px #00abf0;
+    }
+    
+    .about-content {
+      flex: 1;
+      min-width: 300px;
+    }
+    
+    .about-content h1 {
+      font-size: 45px;
+      margin-bottom: 15px;
+    }
+    
+    .about-content h1 span {
+      color: #00abf0;
+    }
+    
+    .about-content h3 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: #00abf0;
+    }
+    
+    .about-content p {
+      font-size: 18px;
+      line-height: 1.8;
+      margin-bottom: 15px;
+    }
+    
+    .info {
+      margin-top: 25px;
+    }
+    
+    .info p {
+      margin: 10px 0;
+      font-size: 17px;
+    }
+    
+    .info span {
+      color: #00abf0;
+      font-weight: bold;
+    }
+    
+    .btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 14px 35px;
+      background: #00abf0;
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      transition: .3s;
+    }
+    
+    .btn:hover {
+      background: white;
+      color: #00abf0;
+    }
+    
+    footer {
+      background: #051129;
+      text-align: center;
+      padding: 20px;
+      margin-top: 60px;
+    }
+    
+    @media(max-width:900px) {
+      
+      .about {
+        flex-direction: column;
+        text-align: center;
+      }
+      
+      header {
+        flex-direction: column;
+      }
+      
+      nav {
+        margin-top: 10px;
+      }
+      
+      .about-img img {
+        width: 250px;
+        height: 250px;
+      }
+      
+      .about-content h1 {
+        font-size: 35px;
+      }
+      
+    }
+  </style>
+  
+</head>
+
+<body>
+  
+  <header>
+    
+    <a href="index.html" class="logo">Abubakar.</a>
+    
+    <nav>
+      
+     <a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="skills.html">Skills</a>
+<a href="projects.html">Projects</a>
+<a href="services.html">Services</a>
+<a href="experience.html">Experience</a>
+<a href="education.html">Education</a>
+<a href="gallery.html">Gallery</a>
+<a href="blog.html">Blog</a>
+<a href="learning.html">Learning</a>
+<a href="hobbies.html">Hobbies</a>
+<a href="certification.html">Certification</a>
+<a href="testimonial.html">Testimonial</a>
+<a href="contact.html">Contact</a>
+      
+    </nav>
+    
+  </header>
+  
+  <section class="about">
+    
+    <div class="about-img">
+      
+      <img src="/images/profile.jpeg" alt="Profile">
+      
+    </div>
+    
+    <div class="about-content">
+      
+      <h1>About <span>Me</span></h1>
+      
+      <h3>Computer Science Student</h3>
+      
+      <p>
+        Hello! My name is <strong>Abubakar Umar</strong>. I am a passionate Computer Science student who enjoys learning new technologies and solving real-world problems through programming.
+      </p>
+      
+      <p>
+        I have a strong interest in Web Development, Software Engineering, Database Systems, Networking, and Artificial Intelligence. My goal is to become a professional software developer capable of building modern and responsive applications.
+      </p>
+      
+      <p>
+        I believe in continuous learning, teamwork, creativity, and using technology to make life easier.
+      </p>
+      
+      <div class="info">
+        
+        <p><span>Name:</span> Abubakar Umar</p>
+        
+        <p><span>Department:</span> Computer Science</p>
+        
+        <p><span>Nationality:</span> Nigerian</p>
+        
+        <p><span>Level:</span> Undergraduate Student</p>
+        
+        <p><span>Career Goal:</span> Software Engineer</p>
+        
+      </div>
+      
+      <a href="contact.html" class="btn">Contact Me</a>
+      
+    </div>
+    
+  </section>
+  
+  <footer>
+    
+    <p>© 2026 Abubakar Umar | Portfolio Website</p>
+    
+  </footer>
+  
+</body>
+
+</html>

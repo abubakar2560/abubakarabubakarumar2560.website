@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Experience | Abubakar Umar</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    body {
+      background: #081b29;
+      color: white;
+    }
+    
+    header {
+      background: #051129;
+      padding: 20px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+      color: #00abf0;
+      text-decoration: none;
+    }
+    
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 18px;
+      font-weight: bold;
+      transition: .3s;
+    }
+    
+    nav a:hover,
+    .active {
+      color: #00abf0;
+    }
+    
+    .experience {
+      padding: 70px 8%;
+    }
+    
+    .experience h1 {
+      text-align: center;
+      font-size: 45px;
+      margin-bottom: 15px;
+    }
+    
+    .experience h1 span {
+      color: #00abf0;
+    }
+    
+    .experience>p {
+      text-align: center;
+      color: #ccc;
+      margin-bottom: 50px;
+      font-size: 18px;
+    }
+    
+    .timeline {
+      position: relative;
+      max-width: 900px;
+      margin: auto;
+    }
+    
+    .timeline::before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 0;
+      width: 4px;
+      height: 100%;
+      background: #00abf0;
+      transform: translateX(-50%);
+    }
+    
+    .container {
+      padding: 20px 40px;
+      position: relative;
+      width: 50%;
+    }
+    
+    .left {
+      left: 0;
+    }
+    
+    .right {
+      left: 50%;
+    }
+    
+    .content {
+      background: #112e42;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0, 171, 240, .3);
+      transition: .4s;
+    }
+    
+    .content:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 20px #00abf0;
+    }
+    
+    .content h2 {
+      color: #00abf0;
+      margin-bottom: 10px;
+    }
+    
+    .content h4 {
+      margin-bottom: 10px;
+    }
+    
+    .content p {
+      line-height: 1.7;
+      color: #ddd;
+    }
+    
+    .container::after {
+      content: "";
+      position: absolute;
+      top: 30px;
+      right: -12px;
+      width: 20px;
+      height: 20px;
+      background: #00abf0;
+      border-radius: 50%;
+    }
+    
+    .right::after {
+      left: -10px;
+    }
+    
+    footer {
+      margin-top: 60px;
+      background: #051129;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    @media(max-width:768px) {
+      
+      header {
+        flex-direction: column;
+      }
+      
+      nav {
+        margin-top: 15px;
+        text-align: center;
+      }
+      
+      nav a {
+        display: inline-block;
+        margin: 8px;
+      }
+      
+      .timeline::before {
+        left: 20px;
+      }
+      
+      .container {
+        width: 100%;
+        padding-left: 60px;
+        padding-right: 20px;
+        left: 0;
+      }
+      
+      .container::after {
+        left: 10px;
+      }
+      
+      .right {
+        left: 0;
+      }
+      
+    }
+  </style>
+  
+</head>
+
+<body>
+  
+  <header>
+    
+    <a href="index.html" class="logo">Abubakar.</a>
+    
+    <nav>
+      
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="skills.html">Skills</a>
+      <a href="projects.html">Projects</a>
+      <a href="services.html">Services</a>
+      <a href="experience.html" class="active">Experience</a>
+      <a href="education.html">Education</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+      
+    </nav>
+    
+  </header>
+  
+  <section class="experience">
+    
+    <h1>My <span>Experience</span></h1>
+    
+    <p>Academic experience, practical projects and continuous learning journey.</p>
+    
+    <div class="timeline">
+      
+      <div class="container left">
+        <div class="content">
+          <h2>2024</h2>
+          <h4>Started Computer Science</h4>
+          <p>Began my undergraduate studies in Computer Science and developed a strong interest in programming and software development.</p>
+        </div>
+      </div>
+      
+      <div class="container right">
+        <div class="content">
+          <h2>2025</h2>
+          <h4>Frontend Web Development</h4>
+          <p>Learned HTML, CSS and JavaScript while building responsive websites and personal portfolio projects.</p>
+        </div>
+      </div>
+      
+      <div class="container left">
+        <div class="content">
+          <h2>2025</h2>
+          <h4>Academic Projects</h4>
+          <p>Developed student management systems, calculator applications and portfolio websites as part of academic practice.</p>
+        </div>
+      </div>
+      
+      <div class="container right">
+        <div class="content">
+          <h2>2026</h2>
+          <h4>Continuous Learning</h4>
+          <p>Continuing to improve my knowledge in databases, networking, software engineering and modern web technologies.</p>
+        </div>
+      </div>
+      
+    </div>
+    
+  </section>
+  
+  <footer>
+    
+    <p>© 2026 Abubakar Umar | Computer Science Portfolio</p>
+    
+  </footer>
+  
+</body>
+
+</html>
